@@ -63,18 +63,4 @@ Invalid hashes: 0
 - **Invalid Hashes**: Any hash that does not conform to valid formats for NT, LM, or SHA256 will be marked as invalid and skipped in the final count.
 - **Maximum Hashes per Bulk Lookup**: The API allows a maximum of 500 hashes per request in bulk lookup mode.
 
-## API Integration Details
 
-The script sends requests to the `https://ntlm.pw` API in one of two ways:
-- **Single Lookup**: For files with fewer than 10 hashes.
-- **Bulk Lookup**: For files with 10 or more hashes, which reduces the cost per hash.
-
-The API returns either the cracked password, `[not found]` if the hash is not in the database, or `[invalid hash]` for invalid formats.
-
-## License
-
-This tool is provided for educational and research purposes only. Usage must comply with local and international cybersecurity laws. Unauthorized access and use of this tool against systems without consent is strictly prohibited.
-
----
-
-This README provides a comprehensive overview, usage instructions, and notes on limitations and legality for your tool. Adjust any specifics as necessary!
